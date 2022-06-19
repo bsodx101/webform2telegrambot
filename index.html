@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/telegram-bot/img/favicon.ico" type="image/x-icon">
+    <title> Атлас Недвижимость форма отправки </title>
+    <link rel="stylesheet" href="js/fm.revealator.jquery.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom styles for this template -->
+    <!-- Подключение CSS файла -->
+<link rel="stylesheet" href="modal.css">
+
+<!-- Подключения JavaScript файла -->
+<script src="modal.js"></script>
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      
+
+      <div class="row">
+      	<div class="col-sm-4">
+      		<form action="telegram.php" method="POST"enctype="multipart/form-data">
+
+
+            <center><img class="logo revealator-slidedown revealator-delay1 revealator-once" src="/telegram-bot/logo.gif"></img></center>
+      			<!--<div class="revealator-slideright revealator-delay1 revealator-once"><legend>Добавить объект в telegram <font color="#00c64f">Атлас Недвижимость</font></legend></div>-->
+                 <!-- Поля ввода --><br>
+<p class="mini revealator-fade revealator-delay5 revealator-once">Знаком <b><font color="#ff0000">*</font></b> отмечены поля обязательные к заполнению <br><b><font color="#ff0000">Хештеги</font></b> пишутся без пробелов между <b><font color="#ff0000">#</font></b> и <i>текстом_тега</i>, не должны начинаться с цифры (пример: <b><font color="#ff0000">#</font></b><i>Центр123</i>) <br> Если пишете несколько, то пробел ставится <b><font color="#ff0000">МЕЖДУ ХЕШТЕГАМИ</font></b> (пример: <b><font color="#ff0000">#</font></b><i>Мамайка</i></font><b>[ПРОБЕЛ]<font color="#ff0000">#</font></b><i>Дагомыс_центр</i>)</font></b>  <b></b> <br>В противном случае хештеги работать <b><font color="#ff0000">НЕ БУДУТ</font></b><br>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Тип недвижимости<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_type" required placeholder="Дом/квартира">
+                </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Район<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_district" required placeholder="Мамайка">
+                </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Улица:</label>
+      				<input type="text" class="form-control" id="" name="user_street" placeholder="ул.Ленина">
+                </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">ЖК:</label>
+      				<input type="text" class="form-control" id="" name="user_housing_coop" placeholder="Мантера">
+                </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Этаж:</label>
+      				<input type="text" class="form-control" id="" name="user_level" placeholder="7 этаж">
+                </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Земельный участок:</label>
+      				<input type="text" class="form-control" id="" name="user_land_plot" placeholder="70 соток">
+                </div>
+
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Состояние:</label>
+      				<input type="text" class="form-control" id="" name="user_condition" placeholder="Чистовая отделка">
+      			</div>
+
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Площадь помещения м²<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_square" required placeholder="777 кв.м.">
+      			</div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Количество спален:</label>
+      				<input type="text" class="form-control" id="" name="user_badrooms" placeholder="2 спальни">
+      			</div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Вид:</label>
+      				<input type="text" class="form-control" id="" name="user_view" placeholder="Вид на горы">
+      			</div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Краткое описание объекта<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_description" required placeholder="Таунхаус на первой береговой линии">
+      			</div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Риелтор<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_name" required placeholder="Иван Иванов (можно указать несколько)">
+      			</div>
+
+            <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="online_phone">Телефон<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="tel" class="form-control" id="phone1" name="user_phone1" required placeholder="Основной номер для связи">
+      			</div>
+
+    <script>
+               
+    window.addEventListener("DOMContentLoaded", function() 
+    {
+            
+    function setCursorPosition(pos, elem) {
+
+          elem.focus();
+           
+           if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+           else if (elem.createTextRange) {
+           var range = elem.createTextRange();
+           range.collapse(true);
+           range.moveEnd("character", pos);
+           range.moveStart("character", pos);
+           range.select()
+           
+                  }
+              
+              }
+            function mask(event) {
+            var matrix = "+7(___)_______",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, "");
+            if (def.length >= val.length) val = def;
+            this.value = matrix.replace(/./g, function(a) {
+            return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+            });
+            if (event.type == "blur") {
+            if (this.value.length == 2) this.value = ""
+            } else setCursorPosition(this.value.length, this)
+            };
+            var input = document.querySelector("#phone1");
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            });
+              
+    </script>
+
+<div class="form-group revealator-slideup revealator-delay3 revealator-once">
+  <label for="online_phone">Дополнительный телефон:</label>
+  <input type="tel"   class="form-control" id="phone2" name="user_phone2" placeholder="Например, номер второго риелтора">
+    </div>
+<script>
+     
+window.addEventListener("DOMContentLoaded", function() 
+{
+              
+function setCursorPosition(pos, elem) {
+  
+  elem.focus();
+  if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+  else if (elem.createTextRange) {
+  var range = elem.createTextRange();
+  range.collapse(true);
+  range.moveEnd("character", pos);
+  range.moveStart("character", pos);
+  range.select()
+         }
+                
+    }
+  function mask(event) {
+    var matrix = "+7(___)_______",
+    i = 0,
+    def = matrix.replace(/\D/g, ""),
+    val = this.value.replace(/\D/g, "");
+    if (def.length >= val.length) val = def;
+    this.value = matrix.replace(/./g, function(a) {
+    return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+    if (event.type == "blur") {
+    if (this.value.length == 2) this.value = ""
+    } else setCursorPosition(this.value.length, this)
+    };
+    var input = document.querySelector("#phone2");
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    });
+                
+</script>
+
+                        
+              
+
+            <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+              <label for="">Telegram<b><font color="#ff0000">*</font></b>:</label>
+              <input type="text" value="@" class="form-control" id="" name="user_telegramacc" minlength="3" maxlength="170"  required placeholder="@telegram (можно указать несколько)">
+            </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Цена<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_price" required placeholder="77 млн.р.">
+      			</div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Комиссия:</label>
+      				<input type="text" class="form-control" id="" name="user_tips" placeholder="900 т.р.">
+
+             </div>
+
+                <div class="form-group revealator-slideup revealator-delay3 revealator-once">
+      				<label for="">Хештеги<b><font color="#ff0000">*</font></b>:</label>
+      				<input type="text" class="form-control" id="" name="user_tags" required placeholder="#Хештег[ПРОБЕЛ]#ЕщеХештег[ПРОБЕЛ]#ещеОдинХештег">
+      			</div>
+
+                <!-- Поле с выбором файла -->
+                
+               <!-- <div class="contact-form__input-wrapper">
+                  <label for="contact-form__input_file" class="contact-form__file-button">
+                    <span>Прикрепить фото:</span>-->
+                    <div class="contact-form__input-wrapper revealator-fade revealator-delay8 revealator-once">
+                      <input name="files[]" type="file" accept="image/*" name="files[]" id="contact-form__input_file" class="contact-form__input contact-form__input_file" multiple>
+                      <label for="contact-form__input_file" class="contact-form__file-button">
+                         <span class="contact-form__input__file-icon-wrapper"><img class="input__file-icon" src="./img/add.svg" alt="Выбрать файл" width="25"></span>
+                         <span class="contact-form__input__file-button-text">Выберите фото <br><p class="mini"> (максимум 5)</p></span>
+                      </label>
+                   </div>
+                </label>
+
+                   <!-- <input type="file" name="files[]" id="contact-form__input_file"
+                           class="contact-form__input contact-form__input_file" multiple>-->
+                   
+                 </div>
+
+
+      			    </div>
+
+                    </div>
+                    <div class="container">
+      		<div class="buttongo">
+            <button type="submit" class="btn btn-primary">Отправить</button>
+                  </div>
+                  <script>
+                    let inputs = document.querySelectorAll('.contact-form__input_file');
+                    Array.prototype.forEach.call(inputs, function (input) {
+                      let label = input.nextElementSibling,
+                        labelVal = label.querySelector('.contact-form__input__file-button-text').innerText;
+                  
+                      input.addEventListener('change', function (e) {
+                        let countFiles = '';
+                        if (this.files && this.files.length >= 1)
+                          countFiles = this.files.length;
+                  
+                        if (countFiles)
+                          label.querySelector('.contact-form__input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+                        else
+                          label.querySelector('.contact-form__input__file-button-text').innerText = labelVal;
+                      });
+                    });
+                </script>
+                </div>
+        </div>
+        
+          </form>
+
+
+          
+      	</div><!-- .col-sm-4 -->
+      </div> <!-- .row -->
+
+    </div><!-- /.container -->
+
+    
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
+	
